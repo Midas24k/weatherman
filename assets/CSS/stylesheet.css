@@ -1,0 +1,88 @@
+*{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+.container {
+    border: 5px solid lightgrey;
+
+}
+
+.container {
+    display: flex;
+    gap: 35px;
+    padding: 30px;
+}
+
+.geosearch {
+    border: 5px solid lightgray;
+    border-radius: 20px;
+    background-color: lightgrey;  
+    text-align: center;
+    color: whitesmoke;
+    width: 550px;
+}
+
+.geosearch input {
+    border: 1px solid black;
+    outline: none;
+    background: #ebfffc;
+    color:#555;
+    padding: 0px 17px;
+    height: 46px;
+    width:100%;
+    border-radius: 4px;
+    font-size: 18;
+}
+
+.geosearch input:focus {
+    padding: 0 16px;
+    border: 2px solid black;
+}
+
+.geosearch .divider {
+    height: 1px;
+    width: 100%;
+    margin: 25px 0;
+    background: #BBBBBB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+.geosearch .divider::before{
+    content: "or";
+    color: black;
+    font-size: 1.18rem;
+    padding: 0 15px;
+    margin: -4px;
+    background: lightgray;
+}
+
+.geosearch button {
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    outline: none;
+    background: lightblue;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: black;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+.geosearch .search-btn:hover {
+    background: #2c52ed;
+  }
+.geosearch .location-btn {
+    background: #6C757D;
+}
+.geosearch .location-btn:hover {
+    background: #5c636a;
+  }
